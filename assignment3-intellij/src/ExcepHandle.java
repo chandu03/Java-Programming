@@ -22,7 +22,7 @@ public class ExcepHandle{
             throw new NumberFormatException("Mobile Number cannot contain any character other than a digit");
         }
 
-        String pattern2 = "^[1-9]{2}[A-Z]{3}[0-9]{4}$";
+        String pattern2 = "^[1-9]{2}[a-zA-Z]{3}[0-9]{4}$";
         Pattern b = Pattern.compile(pattern2);
         Matcher m2 = b.matcher(r);
         if(!m2.find()){
